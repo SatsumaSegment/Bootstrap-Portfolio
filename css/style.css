@@ -92,9 +92,9 @@ body {
 
 /* Skills Section */
 
+/* Align the section's content */
 .skills {
     text-align: center;
-    list-style-position: inside;
     margin-bottom: 5%;
 }
 
@@ -103,7 +103,10 @@ body {
 }
 
 #skillsList {
-    column-count: 3;
+    text-align: left; /* Align text to left to bullet points are straight */
+    margin-left: 20%; /* Add a left margin to center skills list */
+    font-size: large;
+    column-count: 3; /* Split the list into 3 columns */
 }
 
 /* --- Projects Section --- */
@@ -182,6 +185,45 @@ body {
     height: auto;
 }
 
+/* Add a box shadow when hovering over buttons */
 .btn:hover {
     box-shadow: 0 0 5px 5px var(--hoverTheme);
+}
+
+
+/* --- Contact Section --- */
+
+.contact {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contactContent p {
+    color: white;
+}
+
+/* Display contact list inline, large font and increase spacing */
+.contactItem {
+    display: inline-block;
+    font-size: large;
+    margin-right: 2%;
+}
+
+/* Override default link styles */
+.contactLink {
+    text-decoration: none;
+    color: var(--blueTheme);
+}
+
+/* Add some hover styles for the contact links */
+.contactLink:hover {
+    color: var(--hoverTheme);
+    box-shadow: 0 0 5px 5px var(--hoverTheme);
+}
+
+/* --- Footer --- */
+
+footer {
+    background-color: aliceblue;
+    text-align: center;
 }
