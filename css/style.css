@@ -44,7 +44,66 @@ body {
 
 /* --- Hero Section --- */
 
-/* Add a background image to hero */
+/* Add a background image to hero and align text */
 .heroBackground {
-    
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    box-shadow: 0 0 8px 8px var(--backgroundTheme) inset;
+    text-align: center;
+}
+
+/* Style the text for hero section */
+.heroText {
+    display: inline-block;
+    color: var(--backgroundTheme);
+    text-shadow: 2px 2px 2px white;
+}
+
+.heroParagraph {
+    margin-top: 2%;
+}
+
+/* Style the profile picture */
+#profilePic {
+    width: 20%;
+    border-radius: 50%; /* Make the picture round */
+    box-shadow: 0 0 8px 8px var(--backgroundTheme); /* A shadow to make the image pop */
+}
+
+/* --- Projects Section --- */
+
+/* Format the cards into a grid */
+.projects {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "work1 work1"
+    "work2 work3"
+    "work4 work5"
+    ;
+
+    border: 2px solid black;
+}
+
+.work1 {
+    width: 50%;
+    grid-area: work1;
+}
+
+.work2 {
+    grid-area: work2;
+}
+
+.work3 {
+    grid-area: work3;
+}
+
+.work4 {
+    grid-area: work4;
+}
+
+.work5 {
+    grid-area: work5;
 }
