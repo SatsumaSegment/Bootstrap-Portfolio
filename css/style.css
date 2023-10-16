@@ -85,8 +85,25 @@ body {
     margin-bottom: 5%;
 }
 
-.aboutMe {
+.aboutContent {
     color: white;
+    font-size: large;
+}
+
+/* Skills Section */
+
+.skills {
+    text-align: center;
+    list-style-position: inside;
+    margin-bottom: 5%;
+}
+
+.skillsContent {
+    color: white;
+}
+
+#skillsList {
+    column-count: 3;
 }
 
 /* --- Projects Section --- */
@@ -149,6 +166,7 @@ body {
     margin: 2%;
 }
 
+/* Light up cards when hovering over them */
 .card:hover {
     opacity: 100%;
 }
@@ -162,4 +180,8 @@ body {
 .cardImg {
     width: auto;
     height: auto;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px 5px var(--hoverTheme);
 }
