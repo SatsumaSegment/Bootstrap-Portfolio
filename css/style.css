@@ -1,0 +1,50 @@
+
+/* Some color scheme variables */
+:root {
+    --blueTheme: rgb(73, 199, 230); 
+    --hoverTheme: rgb(99, 145, 156);
+    --backgroundTheme: rgb(105, 105, 105);
+  }
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--backgroundTheme);
+}
+
+/* --- Navbar Section --- */
+
+/* Formatting for the navbar title */
+.navTitle {
+    position: absolute;
+    margin-top: 4%;
+    border: 5px solid var(--backgroundTheme);
+    background-color: var(--blueTheme);
+    border-radius: 0 0 30% 30%;
+    font-size: xx-large;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+/* Aligning the navbar items to the right */
+.navItems {
+    justify-content: end;
+    margin-right: 2%;
+}
+
+/* Change the color of navbar links */
+.nav-link,
+.dropdown-item {
+    color: var(--blueTheme);
+}
+
+/* --- Hero Section --- */
+
+/* Add a background image to hero */
+.heroBackground {
+    
+}
