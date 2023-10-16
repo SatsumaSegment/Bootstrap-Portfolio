@@ -27,11 +27,12 @@
                     Projects
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Salty Gizmo</a></li>
-                    <li><a class="dropdown-item" href="#">SoundXone</a></li>
-                    <li><a class="dropdown-item" href="#">Pong</a></li>
-                    <li><a class="dropdown-item" href="#">Image Filter</a></li>
-                    <li><a class="dropdown-item" href="#">Raycasting Engine</a></li>
+                    <li><a class="dropdown-item" href="#work1">Salty Gizmo</a></li>
+                    <li><a class="dropdown-item" href="#work2">SoundXone</a></li>
+                    <li><a class="dropdown-item" href="#work3">Pong</a></li>
+                    <li><a class="dropdown-item" href="#work4">Image Filter</a></li>
+                    <li><a class="dropdown-item" href="#work5">Raycasting Engine</a></li>
+                    <li><a class="dropdown-item" href="#work6">Langton's Ant</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -55,61 +56,85 @@
                 <div class="container-fluid py-5">
                   <h1 class="display-5 fw-bold heroText">Hi, I'm Greg</h1>
                   <br>
-                  <p class="col-md-8 fs-4 heroText heroParagraph">A front-end developer with knowledge in a number of programming languages.</p>
+                  <p class="col-md-8 fs-4 heroText heroParagraph">A front-end developer, programming and technology enthusiast.</p>
                 </div>
                 <img class="mx-auto d-block img-fluid unlock-icon" id="profilePic" src="./images/ProfilePic.png" alt="A picture of Greg Duke">
               </div>
 
         </section>
 
+        <section class="about">
+            
+            <h2 class="heading">About Me</h2>
+
+            <div class="aboutMe">
+                <p>I'm a self-taught programmer with knowledge a number of programming languages, including C++/C, Python and Javascript. I have a keen interest in computers, electronics and anything technology related, with over eight years’ experience assembling and repairing PC and laptop hardware. I have developed a number of software applications as a self-taught programmer and enjoy tinkering with microcontrollers such as the Arduino, Raspberry Pi and ESP-32.</p>
+            </div>
+
+        </section>
+
         <section class="projects">
 
-            <h2 id="projectHeader">Projects</h2>
+            <h2 class="heading">Projects</h2>
 
-            <div class="card mb-3 mx-auto w-60 work1">
-                <img src="./images/password-generator.png" class="card-img-top cardImg" alt="Salty Gizmo - password generator">
-                <div class="card-body">
-                  <h5 class="card-title">Salty Gizmo</h5>
-                  <p class="card-text">A password generation tool, written in Python and KivyMD. A tool called Buildozer was used to make this project Android compatible.</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-              </div>
+            <div class="projectGrid">
 
-              <div class="card mx-auto work2">
-                <img src="./images/CS50-final-project.png" class="card-img-top cardImg" alt="CS50 - Final project">
-                <div class="card-body">
-                  <h5 class="card-title">SoundXone</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
+                <div class="card" id="work1">
+                    <img src="./images/password-generator.png" class="card-img-top mainCardImg" alt="Salty Gizmo - password generator">
+                    <div class="card-body">
+                    <h5 class="card-title">Salty Gizmo</h5>
+                    <p class="card-text">A password generation tool which allows users to generate encrypted passwords. Written in Python and KivyMD. A tool called Buildozer was used to make this project Android compatible.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
-              </div>
 
-              <div class="card mx-auto work3">
-                <img src="./images/pong.png" class="card-img-top cardImg" alt="Pong game">
-                <div class="card-body">
-                  <h5 class="card-title">Pong</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
+                <div class="card" id="work2">
+                    <img src="./images/CS50-final-project.png" class="card-img-top cardImg" alt="CS50 - Final project">
+                    <div class="card-body">
+                    <h5 class="card-title">SoundXone</h5>
+                    <p class="card-text">My final project for CS50: Introduction to Computer Science. A website that uses ToneJS and allows the user to create beats and melodies. The website also features an audio visualizer. Written in HTML, CSS and Javascript and tied together using Python's Flask library.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
-              </div>
 
-              <div class="card mx-auto work4">
-                <img src="./images/image-filter.png" class="card-img-top cardImg" alt="C++ Image filter">
-                <div class="card-body">
-                  <h5 class="card-title">Image Filter</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
+                <div class="card" id="work3">
+                    <img src="./images/pong.png" class="card-img-top cardImg" alt="Pong game">
+                    <div class="card-body">
+                    <h5 class="card-title">Pong</h5>
+                    <p class="card-text">An implementation of the famous game 'Pong'. Written in Python using the Pygame library.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
-              </div>
 
-              <div class="card mx-auto work5">
-                <img src="./images/raycaster.png" class="card-img-top cardImg" alt="Raycasting Engine">
-                <div class="card-body">
-                  <h5 class="card-title">Raycasting Engine</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Project</a>
+                <div class="card" id="work4">
+                    <img src="./images/image-filter.png" class="card-img-top cardImg" alt="C++ Image filter">
+                    <img src="./images/read-bmp.png" class="card-img-top cardImg" alt="C++ Image filter read file">
+                    <div class="card-body">
+                    <h5 class="card-title">Image Filter</h5>
+                    <p class="card-text">An image filter program which allows users to add greyscale, sepia and Gaussian blur filters to .bmp images. Written in C++.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
-              </div>
+
+                <div class="card" id="work5">
+                    <img src="./images/raycaster.png" class="card-img-top cardImg" alt="Raycasting Engine">
+                    <div class="card-body">
+                    <h5 class="card-title">Raycasting Engine</h5>
+                    <p class="card-text">A simple Raycasting engine. Written in Python using the Pygame library.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+
+                <div class="card" id="work6">
+                    <img src="./images/Langtons-ant.png" class="card-img-top cardImg" alt="Raycasting Engine">
+                    <div class="card-body">
+                    <h5 class="card-title">Langton's Ant</h5>
+                    <p class="card-text">An implementation of Langton's Ant using Python with the Pygame module.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            
+            </div>
 
         </section>
 
