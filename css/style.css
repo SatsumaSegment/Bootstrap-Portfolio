@@ -228,13 +228,48 @@ footer {
     text-align: center;
 }
 
-/* TODO */
-/* --- Add media queries --- */
-/* focus on navbar and profil picutre */
-/* display one image per row for grid */
-/* maybe change the skills list formatting */
-/* Maybe change hero text formatting */
+
+/* --- Media Queries --- */
+
+/* For tablet devices */
+@media only screen and (max-width: 991px) {
+
+    /* Remove title to avoid navbar overlapping */
+    .navTitle {
+        visibility: hidden;
+    }
+
+    /* Increase the size of profile picture */
+    #profilePic {
+        width: 50%;
+    }
+
+    /* Smaller tablet/mobile devices */
+    @media only screen  and (max-width: 850px) {
+
+        /* Increase width of grid and display 1 item per row */
+        .projectGrid {
+            width: 80%;
+            grid-template-rows: 16% 14.5% 13% 29.5% 11.5% 15%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "work1"
+            "work2"
+            "work3"
+            "work4"
+            "work5"
+            "work6"
+            ;
+        }
+
+        /* Allow long image to fit card */
+        #work4 img {
+            height: 40%;
+        }
+
+    }
+
+}
 
 /* --- Make sure all links go somewhere --- */
 /* Contact links should go to correct websites */
-/* Resume link in navbar should download resume PDF */
